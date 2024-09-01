@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Vegetables Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Organic Fruits and  Vegetables Store</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="products">
+            <h1>Our Products</h1>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="carrot.jpeg" alt="Carrot">
+                    <h3>Organic Carrot</h3>
+                    <p>Price: $2.00 per lb</p>
+                    <button onclick="addToCart('Carrot', 2.00)">Add to Cart</button>
+                </div>
+                
+               
+                <div class="product-card">
+                    <img src="cabbage.jpg" alt="cabbage">
+                    <h3>cabbage</h3>
+                    <p>Price: $2.50 per lb</p>
+                    <button onclick="addToCart('Cabbage', 2.50)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="chilli.jpeg" alt="chilli">
+                    <h3>Chilli</h3>
+                    <p>Price: $1.50 per lb</p>
+                    <button onclick="addToCart('chilli', 1.50)">Add to Cart</button>
+                </div>
+               
+                <div class="product-card">
+                    <img src="brinjal.jpeg" alt="brinjal">
+                    <h3>Brinjal</h3>
+                    <p>Price: $4.3 per lb</p>
+                    <button onclick="addToCart('brinjal', 4.3)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="capsicum.jpeg" alt="capsicum">
+                    <h3>Capsicum</h3>
+                    <p>Price: $3.4 per lb</p>
+                    <button onclick="addToCart('capsicum', 3.4)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="mango.jpeg" alt="mango">
+                    <h3>Mango</h3>
+                    <p>Price: $4.60 per lb</p>
+                    <button onclick="addToCart('mango', 4.60)">Add to Cart</button>
+                </div>
+               
+                <div class="product-card">
+                    <img src="Grapes.png" alt="Grapes">
+                    <h3>Grapes</h3>
+                    <p>Price: $2.78 per lb</p>
+                    <button onclick="addToCart('Grapes',2.78 )">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="Lf.jpeg" alt="Lf">
+                    <h3>LadiesFinger</h3>
+                    <p>Price: $4 per lb</p>
+                    <button onclick="addToCart('Ladiesfinger', 4)">Add to Cart</button>
+                </div>
+               
+               
+                <div class="product-card">
+                    <img src="ginger.jpeg" alt="ginger">
+                    <h3>Ginger</h3>
+                    <p>Price: $5 per lb</p>
+                    <button onclick="addToCart('ginger', 5)">Add to Cart</button>
+                </div>
+                
+                <div class="product-card">
+                    <img src="potato.jpeg" alt="potato">
+                    <h3>Potato</h3>
+                    <p>Price: $3 per lb</p>
+                    <button onclick="addToCart('potato', 1.50)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="cf.jpeg" alt="cf">
+                    <h3>Cauliflower</h3>
+                    <p>Price: $3.765 per lb</p>
+                    <button onclick="addToCart('Cauliflower', 1.50)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="tomato.jpeg" alt="Tomato">
+                    <h3>Organic Tomato</h3>
+                    <p>Price: $3.50 per lb</p>
+                    <button onclick="addToCart('Tomato', 3.50)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="strwaberry.jpeg" alt="strwaberry">
+                    <h3>Strawberry</h3>
+                    <p>Price: $3.00 per lb</p>
+                    <button onclick="addToCart('strwaberry', 3.00)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="Corriander.jpg" alt="Corriander">
+                    <h3>Corriander</h3>
+                    <p>Price: $2 per lb</p>
+                    <button onclick="addToCart('Corriander', 2)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="onion.jpg" alt="onion">
+                    <h3>onion</h3>
+                    <p>Price: $4 per lb</p>
+                    <button onclick="addToCart('onion', 4)">Add to Cart</button>
+                </div>
+                
+                <div class="product-card">
+                    <img src="Apple.jpeg" alt="Apple">
+                    <h3>Apple</h3>
+                    <p>Price: $5 per lb</p>
+                    <button onclick="addToCart('Apple', 5)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="pomo.jpeg" alt="pomo">
+                    <h3>Pomogranate</h3>
+                    <p>Price: $6.7 per lb</p>
+                    <button onclick="addToCart('Pomogrante', 1.50)">Add to Cart</button>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="total-price">0.00</span></p>
+            <button id="checkout-btn">Checkout</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Organic Vegetables Store</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
